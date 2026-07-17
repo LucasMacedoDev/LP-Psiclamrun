@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>PSICLAMRON | Terapia Além da Tela — Atendimento Psicológico Online</title>
+    <meta name="description" content="PSICLAMRON oferece atendimento psicológico online com profissionais especializados. Acolhimento, tecnologia e cuidado para sua saúde mental. Acesse a plataforma.">
+    <meta name="keywords" content="psicologia online, terapia online, saúde mental, atendimento psicológico, psicólogo 24 horas, PSICLAMRON">
+    <meta name="author" content="PSICLAMRON">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://psiclamron.com.br">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psiclamron.com.br">
+    <meta property="og:title" content="PSICLAMRON | Terapia Além da Tela">
+    <meta property="og:description" content="Atendimento psicológico online com acolhimento, tecnologia e profissionais especializados.">
+    <meta property="og:image" content="https://psiclamron.com.br/assets/images/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PSICLAMRON | Terapia Além da Tela">
+    <meta name="twitter:description" content="Atendimento psicológico online com acolhimento e tecnologia.">
+    <meta name="twitter:image" content="https://psiclamron.com.br/assets/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo/logo-icon.svg">
+    <link rel="apple-touch-icon" href="assets/logo/logo-icon.svg">
+
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip Link para acessibilidade -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Navbar -->
+    <header class="header" id="header" role="banner">
+        <div class="container header__container">
+            <a href="#" class="header__logo" aria-label="PSICLAMRON - Voltar ao início">
+                <div class="logo-wrapper">
+                    <svg class="logo-icon" viewBox="0 0 120 120" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="brainGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3b8e83"/>
+                                <stop offset="100%" style="stop-color:#255e63"/>
+                            </linearGradient>
+                            <linearGradient id="brainGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f78c3b"/>
+                                <stop offset="50%" style="stop-color:#c24b2a"/>
+                                <stop offset="100%" style="stop-color:#4774ac"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Metade estruturada (esquerda) -->
+                        <path d="M60 15 C35 15, 15 35, 15 60 C15 85, 35 105, 60 105 L60 15Z" 
+                              fill="none" stroke="url(#brainGrad1)" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="38" cy="45" r="4" fill="url(#brainGrad1)"/>
+                        <circle cx="30" cy="65" r="3" fill="url(#brainGrad1)"/>
+                        <circle cx="42" cy="80" r="3.5" fill="url(#brainGrad1)"/>
+                        <path d="M38 45 L30 65 M30 65 L42 80 M42 80 L60 90" 
+                              stroke="url(#brainGrad1)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <circle cx="48" cy="55" r="2.5" fill="url(#brainGrad1)"/>
+                        <path d="M38 45 L48 55 M48 55 L60 50" 
+                              stroke="url(#brainGrad1)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <!-- Metade criativa (direita) -->
+                        <path d="M60 15 C85 15, 105 35, 105 60 C105 85, 85 105, 60 105 L60 15Z" 
+                              fill="url(#brainGrad2)" opacity="0.9"/>
+                        <path d="M60 25 C75 25, 85 35, 85 50 C85 60, 75 65, 70 70 C65 75, 75 80, 80 85 C85 90, 80 100, 60 100" 
+                              fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M60 35 C70 35, 75 42, 72 50 C70 55, 65 58, 68 62 C70 66, 75 68, 72 75" 
+                              fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="logo-text__name">Psiclamron</span>
+                        <span class="logo-text__tagline">Terapia além da tela</span>
+                    </div>
+                </div>
+            </a>
+
+            <nav class="nav" role="navigation" aria-label="Navegação principal">
+                <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu de navegação">
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                </button>
+                <ul class="nav__menu" id="navMenu" role="menubar">
+                    <li class="nav__item" role="none">
+                        <a href="#inicio" class="nav__link" role="menuitem" data-section="inicio">Início</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#beneficios" class="nav__link" role="menuitem" data-section="beneficios">Benefícios</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#como-funciona" class="nav__link" role="menuitem" data-section="como-funciona">Como Funciona</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#para-quem" class="nav__link" role="menuitem" data-section="para-quem">Para Quem</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#faq" class="nav__link" role="menuitem" data-section="faq">FAQ</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="https://psiclamron.com.br" class="btn btn--primary btn--sm" role="menuitem" target="_blank" rel="noopener noreferrer">
+                            Acessar Plataforma
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <!-- Hero Section -->
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero__bg" aria-hidden="true">
+                <div class="hero__bg-shape hero__bg-shape--1"></div>
+                <div class="hero__bg-shape hero__bg-shape--2"></div>
+                <div class="hero__bg-shape hero__bg-shape--3"></div>
+            </div>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="hero__badge" data-animate="fade-up">
+                        <span class="badge">Plataforma de Saúde Mental</span>
+                    </div>
+                    <h1 class="hero__title" id="hero-title" data-animate="fade-up" data-delay="100">
+                        Saúde Mental com <span class="text-gradient">acolhimento</span>, tecnologia e atendimento especializado
+                    </h1>
+                    <p class="hero__subtitle" data-animate="fade-up" data-delay="200">
+                        A PSICLAMRON conecta você a profissionais de psicologia qualificados através de uma plataforma moderna, segura e humanizada. Seu bem-estar é a nossa prioridade.
+                    </p>
+                    <div class="hero__actions" data-animate="fade-up" data-delay="300">
+                        <a href="https://psiclamron.com.br" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+                            <span>Acessar Plataforma</span>
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#como-funciona" class="btn btn--secondary btn--lg">
+                            <span>Saiba Mais</span>
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hero__trust" data-animate="fade-up" data-delay="400">
+                        <div class="trust-badges">
+                            <div class="trust-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                                <span>100% Seguro</span>
+                            </div>
+                            <div class="trust-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <span>Profissionais Certificados</span>
+                            </div>
+                            <div class="trust-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span>Atendimento 24h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__visual" data-animate="fade-left" data-delay="200">
+                    <div class="hero__image-wrapper">
+                        <div class="hero__glass-card">
+                            <div class="glass-card__header">
+                                <div class="glass-card__avatar" aria-hidden="true">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle cx="50" cy="35" r="20" fill="#3b8e83"/>
+                                        <path d="M20 85 Q50 60 80 85" fill="#3b8e83"/>
+                                    </svg>
+                                </div>
+                                <div class="glass-card__info">
+                                    <span class="glass-card__name">Dra. Ana Silva</span>
+                                    <span class="glass-card__role">Psicóloga Clínica</span>
+                                </div>
+                                <span class="glass-card__status" aria-label="Online">●</span>
+                            </div>
+                            <div class="glass-card__body">
+                                <div class="glass-card__message glass-card__message--received">
+                                    Olá! Como posso ajudar você hoje?
+                                </div>
+                                <div class="glass-card__message glass-card__message--sent">
+                                    Gostaria de agendar uma consulta
+                                </div>
+                                <div class="glass-card__message glass-card__message--received">
+                                    Claro! Vamos encontrar o melhor horário para você.
+                                </div>
+                            </div>
+                            <div class="glass-card__footer">
+                                <span class="glass-card__typing">Digitando...</span>
+                            </div>
+                        </div>
+                        <div class="hero__floating-card hero__floating-card--1" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#3b8e83" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Sessão Confirmada</span>
+                        </div>
+                        <div class="hero__floating-card hero__floating-card--2" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#f78c3b" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                            <span>+500 Atendimentos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator" aria-hidden="true">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Role para explorar</span>
+            </div>
+        </section>
+
+        <!-- Benefícios Section -->
+        <section class="section section--benefits" id="beneficios" aria-labelledby="benefits-title">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__label">Por que escolher a PSICLAMRON</span>
+                    <h2 class="section__title" id="benefits-title">Cuidado que faz a diferença</h2>
+                    <p class="section__subtitle">Uma plataforma pensada para oferecer a melhor experiência em saúde mental, do primeiro contato ao acompanhamento contínuo.</p>
+                </div>
+                <div class="benefits__grid">
+                    <article class="benefit-card" data-animate="fade-up" data-delay="0">
+                        <div class="benefit-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="8" y="4" width="32" height="28" rx="4"/>
+                                <path d="M16 40h16M20 32v8M28 32v8"/>
+                                <path d="M18 14l6 6 10-10"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-card__title">Atendimento Online</h3>
+                        <p class="benefit-card__text">Consultas de qualidade onde você estiver, com total privacidade e conforto. Não precisa se deslocar.</p>
+                    </article>
+                    <article class="benefit-card" data-animate="fade-up" data-delay="100">
+                        <div class="benefit-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M24 4L4 14v20l20 10 20-10V14L24 4z"/>
+                                <path d="M24 24v20"/>
+                                <path d="M24 24L4 14"/>
+                                <path d="M24 24l20-10"/>
+                                <circle cx="24" cy="24" r="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-card__title">Profissionais Especializados</h3>
+                        <p class="benefit-card__text">Equipe de psicólogos certificados e experientes, prontos para atender com ética e competência.</p>
+                    </article>
+                    <article class="benefit-card" data-animate="fade-up" data-delay="200">
+                        <div class="benefit-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="6" y="6" width="36" height="36" rx="8"/>
+                                <path d="M16 20h16M16 28h12"/>
+                                <circle cx="34" cy="28" r="2" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-card__title">Plataforma Moderna</h3>
+                        <p class="benefit-card__text">Interface intuitiva e tecnologia de ponta para uma experiência fluida e sem complicações.</p>
+                    </article>
+                    <article class="benefit-card" data-animate="fade-up" data-delay="300">
+                        <div class="benefit-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M24 4v6M24 38v6M4 24h6M38 24h6"/>
+                                <rect x="14" y="14" width="20" height="20" rx="4"/>
+                                <path d="M20 24l3 3 6-6"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-card__title">Segurança dos Dados</h3>
+                        <p class="benefit-card__text">Seus dados protegidos com criptografia e conformidade com a LGPD. Sigilo absoluto garantido.</p>
+                    </article>
+                    <article class="benefit-card" data-animate="fade-up" data-delay="400">
+                        <div class="benefit-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M24 4c-8 0-14 6-14 14 0 10 14 26 14 26s14-16 14-26c0-8-6-14-14-14z"/>
+                                <circle cx="24" cy="18" r="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-card__title">Atendimento Humanizado</h3>
+                        <p class="benefit-card__text">Cada pessoa é única. Nosso cuidado vai além da técnica, com empatia e escuta verdadeira.</p>
+                    </article>
+                    <article class="benefit-card" data-animate="fade-up" data-delay="500">
+                        <div class="benefit-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="24" cy="24" r="18"/>
+                                <path d="M24 12v12l8 4"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-card__title">Agilidade</h3>
+                        <p class="benefit-card__text">Atendimento imediato disponível e agendamento simplificado. Comece seu cuidado quando precisar.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Funciona Section -->
+        <section class="section section--how-it-works" id="como-funciona" aria-labelledby="how-title">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__label">Simples e Rápido</span>
+                    <h2 class="section__title" id="how-title">Como Funciona</h2>
+                    <p class="section__subtitle">Quatro passos para começar seu cuidado com a saúde mental. Sem burocracia, sem complicação.</p>
+                </div>
+                <div class="how-it-works__timeline">
+                    <div class="timeline__line" aria-hidden="true"></div>
+
+                    <div class="timeline__item" data-animate="fade-up" data-delay="0">
+                        <div class="timeline__number" aria-hidden="true">01</div>
+                        <div class="timeline__card">
+                            <div class="timeline__icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="8" y="8" width="32" height="32" rx="6"/>
+                                    <path d="M16 24h16M24 16v16"/>
+                                </svg>
+                            </div>
+                            <h3 class="timeline__title">Acesse a Plataforma</h3>
+                            <p class="timeline__text">Entre em psiclamron.com.br pelo computador ou celular. Cadastre-se em poucos minutos.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item" data-animate="fade-up" data-delay="150">
+                        <div class="timeline__number" aria-hidden="true">02</div>
+                        <div class="timeline__card">
+                            <div class="timeline__icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M24 4L4 14v20l20 10 20-10V14L24 4z"/>
+                                    <path d="M24 24v20"/>
+                                    <path d="M24 24L4 14"/>
+                                    <path d="M24 24l20-10"/>
+                                </svg>
+                            </div>
+                            <h3 class="timeline__title">Escolha o Atendimento</h3>
+                            <p class="timeline__text">Selecione entre atendimento imediato ou agendado, de acordo com sua necessidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item" data-animate="fade-up" data-delay="300">
+                        <div class="timeline__number" aria-hidden="true">03</div>
+                        <div class="timeline__card">
+                            <div class="timeline__icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M36 14c0-4.4-3.6-8-8-8s-8 3.6-8 8c0 2.2.9 4.2 2.3 5.6C19.8 21.4 18 24.4 18 28v6h12v-6c0-3.6-1.8-6.6-4.3-8.4C27.1 18.2 28 16.2 28 14z"/>
+                                    <path d="M24 34v6M20 40h8"/>
+                                    <circle cx="28" cy="14" r="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="timeline__title">Converse com um Profissional</h3>
+                            <p class="timeline__text">Seja atendido por um psicólogo qualificado em ambiente seguro e acolhedor.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item" data-animate="fade-up" data-delay="450">
+                        <div class="timeline__number" aria-hidden="true">04</div>
+                        <div class="timeline__card">
+                            <div class="timeline__icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M24 4v6M24 38v6M4 24h6M38 24h6"/>
+                                    <circle cx="24" cy="24" r="12"/>
+                                    <path d="M20 24l3 3 6-6"/>
+                                </svg>
+                            </div>
+                            <h3 class="timeline__title">Continue seu Cuidado</h3>
+                            <p class="timeline__text">Acompanhe sua evolução e mantenha a frequência terapêutica que sua saúde mental merece.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Para Quem é Section -->
+        <section class="section section--audience" id="para-quem" aria-labelledby="audience-title">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__label">Nosso Alcance</span>
+                    <h2 class="section__title" id="audience-title">Para Quem é a PSICLAMRON</h2>
+                    <p class="section__subtitle">Soluções de saúde mental adaptadas para diferentes perfis e necessidades.</p>
+                </div>
+                <div class="audience__grid">
+                    <article class="audience-card" data-animate="fade-up" data-delay="0">
+                        <div class="audience-card__visual" aria-hidden="true">
+                            <div class="audience-card__bg audience-card__bg--individual"></div>
+                            <svg class="audience-card__illustration" viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="28" r="14" fill="#3b8e83" opacity="0.2"/>
+                                <circle cx="40" cy="28" r="10" fill="#3b8e83"/>
+                                <path d="M20 72 Q40 50 60 72" fill="#3b8e83" opacity="0.3"/>
+                                <path d="M20 72 Q40 54 60 72" fill="#3b8e83"/>
+                            </svg>
+                        </div>
+                        <div class="audience-card__content">
+                            <h3 class="audience-card__title">Pessoa Física</h3>
+                            <p class="audience-card__text">Atendimento psicológico individual, com flexibilidade de horários e modalidades que se adaptam à sua rotina.</p>
+                        </div>
+                    </article>
+
+                    <article class="audience-card" data-animate="fade-up" data-delay="100">
+                        <div class="audience-card__visual" aria-hidden="true">
+                            <div class="audience-card__bg audience-card__bg--enterprise"></div>
+                            <svg class="audience-card__illustration" viewBox="0 0 80 80" fill="none">
+                                <rect x="20" y="30" width="40" height="36" rx="4" fill="#4774ac" opacity="0.2"/>
+                                <rect x="24" y="34" width="12" height="12" rx="2" fill="#4774ac"/>
+                                <rect x="40" y="34" width="16" height="6" rx="2" fill="#4774ac" opacity="0.5"/>
+                                <rect x="40" y="44" width="16" height="6" rx="2" fill="#4774ac" opacity="0.5"/>
+                                <rect x="24" y="50" width="12" height="6" rx="2" fill="#4774ac" opacity="0.5"/>
+                                <path d="M30 30V22h20v8" stroke="#4774ac" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="audience-card__content">
+                            <h3 class="audience-card__title">Empresas</h3>
+                            <p class="audience-card__text">Programas de apoio psicológico para colaboradores, promovendo bem-estar e produtividade no ambiente corporativo.</p>
+                        </div>
+                    </article>
+
+                    <article class="audience-card" data-animate="fade-up" data-delay="200">
+                        <div class="audience-card__visual" aria-hidden="true">
+                            <div class="audience-card__bg audience-card__bg--institution"></div>
+                            <svg class="audience-card__illustration" viewBox="0 0 80 80" fill="none">
+                                <path d="M40 12L12 28v40h56V28L40 12z" fill="#255e63" opacity="0.2"/>
+                                <path d="M40 12L12 28v40h56V28L40 12z" stroke="#255e63" stroke-width="2" fill="none"/>
+                                <rect x="32" y="48" width="16" height="20" rx="2" fill="#255e63"/>
+                                <circle cx="40" cy="58" r="2" fill="white"/>
+                                <rect x="20" y="36" width="8" height="8" rx="1" fill="#255e63" opacity="0.5"/>
+                                <rect x="52" y="36" width="8" height="8" rx="1" fill="#255e63" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="audience-card__content">
+                            <h3 class="audience-card__title">Instituições</h3>
+                            <p class="audience-card__text">Parcerias com órgãos públicos e instituições para ampliação do acesso à saúde mental na comunidade.</p>
+                        </div>
+                    </article>
+
+                    <article class="audience-card" data-animate="fade-up" data-delay="300">
+                        <div class="audience-card__visual" aria-hidden="true">
+                            <div class="audience-card__bg audience-card__bg--partner"></div>
+                            <svg class="audience-card__illustration" viewBox="0 0 80 80" fill="none">
+                                <circle cx="28" cy="30" r="10" fill="#f78c3b" opacity="0.2"/>
+                                <circle cx="52" cy="30" r="10" fill="#f78c3b" opacity="0.2"/>
+                                <circle cx="28" cy="30" r="7" fill="#f78c3b"/>
+                                <circle cx="52" cy="30" r="7" fill="#f78c3b"/>
+                                <path d="M20 66 Q28 50 40 66" fill="#f78c3b" opacity="0.3"/>
+                                <path d="M40 66 Q52 50 60 66" fill="#f78c3b" opacity="0.3"/>
+                                <path d="M40 52v8" stroke="#f78c3b" stroke-width="2"/>
+                                <circle cx="40" cy="48" r="3" fill="#f78c3b"/>
+                            </svg>
+                        </div>
+                        <div class="audience-card__content">
+                            <h3 class="audience-card__title">Parceiros</h3>
+                            <p class="audience-card__text">Oportunidades de integração para profissionais da saúde, clínicas e plataformas complementares.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais Section -->
+        <section class="section section--differentials" id="diferenciais" aria-labelledby="diff-title">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__label">O que nos destaca</span>
+                    <h2 class="section__title" id="diff-title">Nossos Diferenciais</h2>
+                    <p class="section__subtitle">Compromisso com a excelência em cada detalhe da sua experiência.</p>
+                </div>
+                <div class="differentials__grid">
+                    <div class="differential-item" data-animate="fade-up" data-delay="0">
+                        <div class="differential-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M24 4L4 14v20l20 10 20-10V14L24 4z"/>
+                                <path d="M24 24v20"/>
+                                <path d="M24 24L4 14"/>
+                                <path d="M24 24l20-10"/>
+                                <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="differential-item__content">
+                            <h3 class="differential-item__title">Atendimento Especializado</h3>
+                            <p class="differential-item__text">Profissionais com formação contínua e abordagens diversificadas para atender cada necessidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="differential-item" data-animate="fade-up" data-delay="80">
+                        <div class="differential-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M24 4c-8 0-14 6-14 14 0 10 14 26 14 26s14-16 14-26c0-8-6-14-14-14z"/>
+                                <circle cx="24" cy="18" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="differential-item__content">
+                            <h3 class="differential-item__title">Profissionais Qualificados</h3>
+                            <p class="differential-item__text">Todos os psicólogos são devidamente registrados no CRP e passam por processo rigoroso de seleção.</p>
+                        </div>
+                    </div>
+
+                    <div class="differential-item" data-animate="fade-up" data-delay="160">
+                        <div class="differential-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="6" y="6" width="36" height="36" rx="8"/>
+                                <path d="M16 24h16M24 16v16"/>
+                            </svg>
+                        </div>
+                        <div class="differential-item__content">
+                            <h3 class="differential-item__title">Plataforma Intuitiva</h3>
+                            <p class="differential-item__text">Design pensado para ser simples e acessível, mesmo para quem não tem familiaridade com tecnologia.</p>
+                        </div>
+                    </div>
+
+                    <div class="differential-item" data-animate="fade-up" data-delay="240">
+                        <div class="differential-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="8" y="4" width="32" height="28" rx="4"/>
+                                <path d="M16 40h16M20 32v8M28 32v8"/>
+                                <path d="M18 14l6 6 10-10"/>
+                            </svg>
+                        </div>
+                        <div class="differential-item__content">
+                            <h3 class="differential-item__title">Segurança dos Dados</h3>
+                            <p class="differential-item__text">Criptografia de ponta a ponta, conformidade com a LGPD e protocolos rigorosos de privacidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="differential-item" data-animate="fade-up" data-delay="320">
+                        <div class="differential-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="24" cy="24" r="18"/>
+                                <path d="M24 12v12l8 4"/>
+                            </svg>
+                        </div>
+                        <div class="differential-item__content">
+                            <h3 class="differential-item__title">Facilidade de Acesso</h3>
+                            <p class="differential-item__text">Acesse de qualquer dispositivo, a qualquer hora. Atendimento imediato disponível quando você mais precisa.</p>
+                        </div>
+                    </div>
+
+                    <div class="differential-item" data-animate="fade-up" data-delay="400">
+                        <div class="differential-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M36 14c0-4.4-3.6-8-8-8s-8 3.6-8 8c0 2.2.9 4.2 2.3 5.6C19.8 21.4 18 24.4 18 28v6h12v-6c0-3.6-1.8-6.6-4.3-8.4C27.1 18.2 28 16.2 28 14z"/>
+                                <path d="M24 34v6M20 40h8"/>
+                                <circle cx="28" cy="14" r="2"/>
+                            </svg>
+                        </div>
+                        <div class="differential-item__content">
+                            <h3 class="differential-item__title">Atendimento Humanizado</h3>
+                            <p class="differential-item__text">Tecnologia a serviço do cuidado. Cada interação é pensada para transmitir acolhimento e segurança.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Principal Section -->
+        <section class="section section--cta" id="cta" aria-labelledby="cta-title">
+            <div class="cta__bg" aria-hidden="true">
+                <div class="cta__shape cta__shape--1"></div>
+                <div class="cta__shape cta__shape--2"></div>
+                <div class="cta__shape cta__shape--3"></div>
+            </div>
+            <div class="container cta__container">
+                <div class="cta__content" data-animate="fade-up">
+                    <h2 class="cta__title" id="cta-title">Seu cuidado começa agora</h2>
+                    <p class="cta__text">Não espere para cuidar da sua saúde mental. A PSICLAMRON está pronta para acolher você com profissionais qualificados e uma plataforma segura.</p>
+                    <a href="https://psiclamron.com.br" class="btn btn--primary btn--xl btn--glow" target="_blank" rel="noopener noreferrer">
+                        <span>Acessar a Plataforma</span>
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <div class="cta__guarantee">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9 12 11 14 15 10"/>
+                        </svg>
+                        <span>Ambiente seguro e sigiloso garantido</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section section--faq" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__label">Tire suas dúvidas</span>
+                    <h2 class="section__title" id="faq-title">Perguntas Frequentes</h2>
+                    <p class="section__subtitle">Encontre respostas para as principais dúvidas sobre nossa plataforma e atendimento.</p>
+                </div>
+                <div class="faq__container" data-animate="fade-up" data-delay="100">
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                            <span class="faq__question-text">O atendimento é online?</span>
+                            <span class="faq__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" hidden>
+                            <p>Sim, todo o atendimento psicológico da PSICLAMRON é realizado de forma online, através de uma plataforma segura e intuitiva. Você pode acessar pelo computador, tablet ou celular, de qualquer lugar com conexão à internet.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                            <span class="faq__question-text">Como funciona?</span>
+                            <span class="faq__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" hidden>
+                            <p>É simples: acesse a plataforma, crie seu cadastro, escolha entre atendimento imediato ou agendado, e seja conectado a um psicólogo qualificado. As sessões acontecem por videochamada, com total sigilo e segurança.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                            <span class="faq__question-text">Preciso agendar?</span>
+                            <span class="faq__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" hidden>
+                            <p>Não necessariamente. Oferecemos duas modalidades: atendimento imediato, para quando você precisa falar com um profissional agora, e atendimento agendado, para quem prefere marcar com antecedência o melhor horário.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                            <span class="faq__question-text">Existe atendimento imediato?</span>
+                            <span class="faq__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" hidden>
+                            <p>Sim! A PSICLAMRON disponibiliza atendimento imediato com psicólogos disponíveis para atender você no momento em que mais precisa. Basta acessar a plataforma e selecionar a opção de atendimento imediato.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                            <span class="faq__question-text">Quem pode utilizar?</span>
+                            <span class="faq__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" hidden>
+                            <p>A plataforma é destinada a pessoas físicas maiores de 18 anos, empresas que desejam oferecer apoio psicológico aos colaboradores, instituições públicas e parceiros do setor de saúde. Também atendemos adolescentes a partir de 12 anos com autorização dos responsáveis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo" aria-label="PSICLAMRON - Voltar ao início">
+                        <svg class="footer__logo-icon" viewBox="0 0 120 120" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="footerBrain1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#3b8e83"/>
+                                    <stop offset="100%" style="stop-color:#255e63"/>
+                                </linearGradient>
+                                <linearGradient id="footerBrain2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#f78c3b"/>
+                                    <stop offset="50%" style="stop-color:#c24b2a"/>
+                                    <stop offset="100%" style="stop-color:#4774ac"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M60 15 C35 15, 15 35, 15 60 C15 85, 35 105, 60 105 L60 15Z" 
+                                  fill="none" stroke="url(#footerBrain1)" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="38" cy="45" r="4" fill="url(#footerBrain1)"/>
+                            <circle cx="30" cy="65" r="3" fill="url(#footerBrain1)"/>
+                            <circle cx="42" cy="80" r="3.5" fill="url(#footerBrain1)"/>
+                            <path d="M38 45 L30 65 M30 65 L42 80 M42 80 L60 90" 
+                                  stroke="url(#footerBrain1)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <circle cx="48" cy="55" r="2.5" fill="url(#footerBrain1)"/>
+                            <path d="M38 45 L48 55 M48 55 L60 50" 
+                                  stroke="url(#footerBrain1)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <path d="M60 15 C85 15, 105 35, 105 60 C105 85, 85 105, 60 105 L60 15Z" 
+                                  fill="url(#footerBrain2)" opacity="0.9"/>
+                            <path d="M60 25 C75 25, 85 35, 85 50 C85 60, 75 65, 70 70 C65 75, 75 80, 80 85 C85 90, 80 100, 60 100" 
+                                  fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <div class="footer__logo-text">
+                            <span class="footer__logo-name">Psiclamron</span>
+                            <span class="footer__logo-tagline">Terapia além da tela</span>
+                        </div>
+                    </a>
+                    <p class="footer__description">Plataforma de saúde mental que conecta pessoas a profissionais de psicologia qualificados, com tecnologia, acolhimento e segurança.</p>
+                </div>
+
+                <div class="footer__links">
+                    <h3 class="footer__heading">Navegação</h3>
+                    <ul class="footer__list">
+                        <li><a href="#inicio" class="footer__link">Início</a></li>
+                        <li><a href="#beneficios" class="footer__link">Benefícios</a></li>
+                        <li><a href="#como-funciona" class="footer__link">Como Funciona</a></li>
+                        <li><a href="#para-quem" class="footer__link">Para Quem</a></li>
+                        <li><a href="#faq" class="footer__link">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h3 class="footer__heading">Contato</h3>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="https://wa.me/" class="footer__link footer__link--icon" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contato@psiclamron.com.br" class="footer__link footer__link--icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                E-mail
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/psiclamron" class="footer__link footer__link--icon" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__cta">
+                    <h3 class="footer__heading">Comece Agora</h3>
+                    <p class="footer__cta-text">Acesse a plataforma e dê o primeiro passo para cuidar da sua saúde mental.</p>
+                    <a href="https://psiclamron.com.br" class="btn btn--primary btn--block" target="_blank" rel="noopener noreferrer">
+                        Acessar Plataforma
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 PSICLAMRON. Todos os direitos reservados.</p>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Política de Privacidade</a>
+                    <a href="#" class="footer__legal-link">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página" title="Voltar ao topo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
