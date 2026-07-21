@@ -1580,7 +1580,7 @@ ul, ol {
 /* ------------------------------------------
    16. RESPONSIVIDADE - TABLET
    ------------------------------------------ */
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     :root {
         --container-padding: var(--space-8);
         --text-4xl: 2.5rem;
@@ -1637,7 +1637,7 @@ ul, ol {
     }
 
     .audience__grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .differentials__grid {
